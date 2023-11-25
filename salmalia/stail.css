@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow-x:hidden ;
+    text-align: center;
+    padding: 20px;
+    background-image: url("hot.jpeg");
+    background-attachment: fixed ;
+    background-size: cover;
+}
+
+/*navbar */
+nav {
+    display: flex;
+    background: transparent;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: rgb(235, 101, 101);
+    overflow: hidden;
+}
+
+nav .logo {
+    font-family: 'Nosifer', sans-serif;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: rgb(235, 101, 101);
+    text-decoration: none;
+    font-size: 0.8em;
+    
+}
+
+nav ul li a:hover {
+    color: rgb(248, 248, 248);
+}
+
+/*hamburger menu */
+.menu-toggle {
+ display: none;
+ flex-direction: column;
+ height: 20px;
+ justify-content: space-between;
+ position: relative;
+}
+
+.menu-toggle input {
+    position: absolute ;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:rgb(238, 141, 141) ;
+    border-radius: 3px;
+    transition: all 0.5s ;
+}
+
+/* hamburger animasi */
+.menu-toggle span:nth-child(2) {
+    transform-origin:0 0 ;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin:0 100% ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+form {
+    max-width: 5000px;
+      margin: 50px auto;
+      background-color: #aa7272a9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+   opacity: 1;
+}
+.availability form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+ }
+ 
+ .availability form .flex .box{
+    flex: 1 1 20rem;
+ }
+ 
+ .availability form .flex .box p{
+    font-size: 2rem;
+    color: var(--sub-color);
+ }
+ 
+ .availability form .flex .box .input{
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    background-color: var(--main-color);
+    color: var(--black);
+    border-bottom: var(--border);
+    margin: 1rem 0;
+ }
+ 
+ .availability form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(3);
+ }
+
+ .room1 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.479);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Menambahkan jarak antara item penawaran */
+}
+
+.room2 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.479);
+    border: 1px solid #ddd;
+    border-radius: auto;
+    margin-bottom: 20px; /* Menambahkan jarak antara item penawaran */
+}
+
+.room3 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.479);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Menambahkan jarak antara item penawaran */
+}
+
+.resep {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.479);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Menambahkan jarak antara item penawaran */
+}
+.resto {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.479);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Menambahkan jarak antara item penawaran */
+}
+
+.pool {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.479);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Menambahkan jarak antara item penawaran */
+}
+
+.meetr {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.479);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Menambahkan jarak antara item penawaran */
+}
+
+.ball {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.479);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Menambahkan jarak antara item penawaran */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hotel-address {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: justify;
+    margin-top: 300px;
+    color: #ffffff;
+  }
+  
+  .hotel-address h3 {
+      text-align: center;
+    color: #ffffff;
+  }
+  
+  .hotel-address p {
+      color: #ffffff;
+  }       
+  .hotel-address ul{
+      list-style-type:none;
+  } 
+  .list1{
+      float: right;
+      margin-top: -90px;
+      margin-right:50px;
+  }
+  footer {
+    background-color: #080808;
+    color: rgb(165, 101, 101);
+    text-align: center;
+    padding: 10px;
+}
+  
+/*bg vide*/
+
+.banner video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    .banner video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*responsive breakpoint */
+
+/*ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+

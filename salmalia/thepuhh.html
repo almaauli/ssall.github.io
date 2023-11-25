@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device_width, initial-scale=1.0" />
+        <title> The Puhh Hotel </title>
+        <link rel="stylesheet" href="stail.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+      <div class="banner">
+        <video autoplay loop muted plays-inline>
+            <source src="vide.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <div class="logo">
+                <h1> THE PUHH hotel </h1>
+            </div>
+            <ul>
+                <li><a href="thepuhh.html">HOME</a></li>
+                <li><a href="room.html">ROOMS</a></li>
+                <li><a href="fasilitas.html">FACILITY</a></li>
+                <li><a href="gallery.html">GALERRY</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <input type="checkbox" /> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </nav>
+        </div>
+
+        <script src="script.js"></script>
+
+        <br>
+        <main>
+        <section class="home" id="home">
+            <div class="head_container">
+              <div class="box">
+                <div class="text">
+                  <h1> Welcome to the puhh hotel </h1>
+                  <p> The Puhh hotel merupakan hotel bintang 9 di kawasan Malioboro, Yogyakarta.</p> 
+                  <p> The Puhh hotel merupakan hotel sepuh yang mengusung tema winnie the pooh sebagai desain desain di beberapa bagian hotel. </p>
+                  <p> The Puhh hotel memiliki berbagai pilihan kamar yang menarik.</p>
+                </div>
+              </div>
+          </section>
+
+           <br>
+          <form action="" method="post">
+            <div class="flex">
+               <div class="box">
+                  <p>check in </p>
+                  <input type="date" name="check_in" class="input" required>
+               </div>
+               <div class="box">
+                  <p>check out </p>
+                  <input type="date" name="check_out" class="input" required>
+               </div>
+               <div class="box">
+                  <p>adults </p>
+                  <select name="adults" class="input" required>
+                     <option value="1">1 adult</option>
+                     <option value="2">2 adults</option>
+                     <option value="3">3 adults</option>
+                     <option value="4">4 adults</option>
+                     <option value="5">5 adults</option>
+                     <option value="6">6 adults</option>
+                  </select>
+               </div>
+               <div class="box">
+                  <p>childs </p>
+                  <select name="childs" class="input" required>
+                     <option value="-">0 child</option>
+                     <option value="1">1 child</option>
+                     <option value="2">2 childs</option>
+                     <option value="3">3 childs</option>
+                     <option value="4">4 childs</option>
+                     <option value="5">5 childs</option>
+                     <option value="6">6 childs</option>
+                  </select>
+               </div>
+               <div class="box">
+                  <p>rooms </p>
+                  <select name="rooms" class="input" required>
+                     <option value="1">1 room</option>
+                     <option value="2">2 rooms</option>
+                     <option value="3">3 rooms</option>
+                     <option value="4">4 rooms</option>
+                     <option value="5">5 rooms</option>
+                     <option value="6">6 rooms</option>
+                  </select>
+               </div>
+            </div>
+            <input type="submit" value="check availability" name="check" class="btn">
+         </form>
+        </main>
+        <br>
+
+        <body>
+            <h1> OUR ROOMS </h1>
+            <section class="room">
+                <div class="room1">
+                    <img src="kamar1.jpeg" alt="kamar1">
+                    <p> Kamar the puhh </p>
+                </div>
+                <div class="room2">
+                    <img src="kamar2.jpeg" alt="kamar2">
+                    <p> Kamar the winnie </p>
+                </div>
+                <div class="room3">
+                    <img src="kamar3.jpeg" alt="kamar3">
+                    <p> Kamar the wuii </p>
+                </div>       
+                </section>
+                <br>
+                <h1> OUR FACILITY </h1>
+                <section class="fasili">
+                    <div class="resep">
+                        <img src="resep.jpeg" alt="resep">
+                        <p> Resepsionis 24 jam </p>
+                    </div>
+                    <div class="resto">
+                        <img src="resto.jpeg" alt="resto">
+                        <p> Restoran Wipie </p>
+                    </div>
+                    <div class="pool">
+                        <img src="pool.jpeg" alt="pool">
+                        <p> Kolam Renang </p>
+                    </div>
+                    <div class="meetr">
+                        <img src="meetr.jpeg" alt="meetr">
+                        <p> Meeting Room </p>
+                    </div>
+                    <div class="ball">
+                        <img src="ball.jpeg" alt="ball">
+                        <p> Ballroom </p>
+                    </div>
+                <br>
+
+            <div class="testimo">
+                <h5> Testimoni </h5>
+                <p> The Puhh hotel sangat nyaman dan pelayanannya ramah </p>
+            </div>
+          <div class="hotel-address">
+            <h3>The Puhh Hotel</h3>
+              <div class="list">
+                  <ul>
+                      <li>Jl. in aja dulu, No 15</li>
+                      <li>reservasi@thepuhh.com</li>
+                      <li>Info.the@puhh.com</li>
+                      <li>T: +62 87921069249</li>
+                  </ul>
+              </div>
+              <div class="list1">
+                  <ul>
+                      <li>Jl. doang </li>
+                      <li>reservasi@thepuhh.com</li>
+                      <li>Info.the@puhh.com</li>
+                      <li>T: +62 86249782229</li>
+                  </ul>
+              </div>
+          </div>
+  
+    <footer>
+        &copy; 2023 THE PUHH HOTEL. All rights reserved.
+    </footer>
+    </body>
+</html>
